@@ -14,14 +14,17 @@ const users = require('./routes/users');
 app.use(morgan('dev'));
 
 app.use(express.static(path.join(__dirname, './stylesheets/style.css')));
+app.use('/wiki', wiki);
+app.use('/users', users);
 // app.use();
 
 app.get('/', (req, res, next) => {
-  res.send(layout(''));
+  res.send(layout());
 });
 
-app.use('/wiki', wiki);
-app.use('/users', users);
+app.get('/*', (req, res, send) => {
+  res.redirect('/wiki');
+});
 
 // const Page = db.define('page');
 
