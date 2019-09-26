@@ -9,7 +9,10 @@ const layout = require('./views/layout');
 const models = require('./models');
 const wiki = require('./routes/wiki');
 const users = require('./routes/users');
-// const routers = require('./routes');
+const bodyParser = require('body-parser');
+
+// app.use(bodyParser.json())
+app.use (bodyParser(express.urlencoded({extended: true})));
 
 app.use(morgan('dev'));
 

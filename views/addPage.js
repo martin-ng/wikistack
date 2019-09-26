@@ -9,14 +9,14 @@ module.exports = () =>
       <div class="form-group">
         <label for="name" class="col-sm-2 control-label">Name</label>
         <div class="col-sm-10">
-          <input name="title" type="text" placeholder="email" />
+          <input name="name" type="text" placeholder="name" />
         </div>
       </div>
 
       <div class="form-group">
         <label for="email" class="col-sm-2 control-label">Email</label>
         <div class="col-sm-10">
-          <input name="title" type="text" placeholder="name" />
+          <input name="email" type="text" placeholder="email" />
         </div>
       </div>
 
@@ -30,14 +30,14 @@ module.exports = () =>
       <div class="form-group">
         <label for="content" class="col-sm-2 control-label">Content</label>
         <div class="col-sm-10">
-          <input name="title" type="text" placeholder="content" />
+          <input name="content" type="text" placeholder="content" />
         </div>
       </div>
 
       <div class="form-group">
         <label for="status" class="col-sm-2 control-label">Status</label>
         <div class="col-sm-10">
-          <input name="title" type="text" placeholder="status" />
+          <input name="status" type="text" placeholder="status" />
         </div>
       </div>
 
